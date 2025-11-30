@@ -1,0 +1,20 @@
+[
+    {
+        "id": "university",
+        "type": "circle",
+        "center": {
+            "lat": 28.73,
+            "long": 43.86
+        },
+        "radius": 1000
+    },
+    {
+        "id": "office",
+        "type": "circle",
+        "center": {
+            "lat": 52.73,
+            "long": 96.86
+        },
+        "radius": 2000
+    }
+]
