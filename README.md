@@ -12,20 +12,6 @@ This project was built as part of the *Geofence Event Processing Challenge* and 
 
 ## Project Structure
 
-geofence/
-  backend/
-    src/
-      config/
-      routes/
-      services/
-      utils/
-    index.js
-    package.json
-    package-lock.json
-    .gitignore
-    README.md
-
-
 ```
 geofence/
   backend/
@@ -99,9 +85,9 @@ Server running on port 3000
 ```
 
 **Logs to console:**
-*Entry and exit from zones
-*First time spotting of vehicles
-*Vehicle exiting all geofence zones
+* Entry and exit from zones
+* First time spotting of vehicles
+* Vehicle exiting all geofence zones
 
 
 ### GET `/vehicle/:id` (Query vehicle zone)
@@ -126,8 +112,8 @@ If the vehicle is not in any of the defined zones:
 }
 ```
 
-**Logs to console:**
-If the vehicle is not present in any of the zones
+**Logs to console:**  
+* If the vehicle is not present in any of the zones
 
 ## How Zone Detection Works
 
@@ -139,8 +125,8 @@ If the vehicle is not present in any of the zones
    * `oldZone = getZone(vehicleId)`
    * `newZone = detectZone(point)`
 6. Logs events such as:
-   * *entered zone*
-   * *exited zone*
+   * entered zone
+   * exited zone
 7. Updates stored state with `setZone(vehicleId, newZone)`
 In-memory state is stored in a `Map()` for O(1) lookups.
 
