@@ -26,7 +26,7 @@ geofence/
          state.js          # In-memory vehicle zone tracking
       utils/
          geometry.js       # Haversine distance + point-inside-zone check
-      index.js               # Express server entry point
+      index.js             # Express server entry point
 ```
 
 ## Setup Instructions
@@ -35,7 +35,7 @@ geofence/
 
 ```
 git clone https://github.com/ashimafarjeez/geofence
-cd geofence
+cd geofence/backend/src
 ```
 
 ### 2. Install Dependencies
@@ -54,7 +54,7 @@ PORT=3000
 ### **4. Start the Server**
 
 ```
-npm start
+node index.js
 ```
 You should see:
 ```
